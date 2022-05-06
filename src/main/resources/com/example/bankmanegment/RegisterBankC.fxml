@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B2B28;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterBanks.RegisterBankC">
+    <children>
+        <Label layoutX="207.0" layoutY="25.0" text="Register Bank C" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fName" layoutX="231.0" layoutY="100.0" prefHeight="25.0" prefWidth="242.0" />
+        <TextField fx:id="idcard" layoutX="231.0" layoutY="222.0" prefHeight="25.0" prefWidth="242.0" />
+        <TextField fx:id="Age" layoutX="231.0" layoutY="181.0" prefHeight="25.0" prefWidth="242.0" />
+        <TextField fx:id="money" layoutX="231.0" layoutY="302.0" prefHeight="25.0" prefWidth="242.0" />
+        <TextField fx:id="pNumber" layoutX="231.0" layoutY="264.0" prefHeight="25.0" prefWidth="242.0" />
+        <TextField fx:id="lName" layoutX="231.0" layoutY="140.0" prefHeight="25.0" prefWidth="242.0" />
+        <Label alignment="CENTER" layoutX="81.0" layoutY="104.0" text="First Name :" textFill="WHITE" AnchorPane.rightAnchor="440.0">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label layoutX="81.0" layoutY="144.0" text="Last Name :" textFill="WHITE" AnchorPane.rightAnchor="440.0">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label contentDisplay="CENTER" layoutX="131.0" layoutY="183.0" text="Age :" textFill="WHITE" AnchorPane.rightAnchor="440.0">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label layoutX="102.0" layoutY="224.0" text="ID Card :" textFill="WHITE" AnchorPane.rightAnchor="440.00000000000006">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label layoutX="81.0" layoutY="268.0" text="Phone Number :" textFill="WHITE" AnchorPane.rightAnchor="440.00000000000006">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label layoutX="38.0" layoutY="304.0" text="Amount of Money :" textFill="WHITE" AnchorPane.rightAnchor="440.0">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Button fx:id="register" layoutX="493.0" layoutY="351.0" mnemonicParsing="false" onAction="#Registerbtn" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #125B50; -fx-background-radius: 30;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+      <Label fx:id="massageBankc" layoutX="231.0" layoutY="61.0" prefHeight="25.0" prefWidth="165.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

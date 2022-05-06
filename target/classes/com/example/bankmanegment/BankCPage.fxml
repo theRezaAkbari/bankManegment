@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B2B28;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankmanegment.BankApage">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B2B28;" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Home">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" layoutX="209.0" layoutY="14.0" prefHeight="38.0" prefWidth="182.0" text="Bank C" textFill="WHITE">
+                                    <font>
+                                        <Font size="35.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="54.0" layoutY="105.0" text="Name :" textFill="WHITE" AnchorPane.rightAnchor="490.0" />
+                                <Label layoutX="54.0" layoutY="155.0" text="Shaba Number :" textFill="WHITE" AnchorPane.rightAnchor="490.0" />
+                                <Label layoutX="54.0" layoutY="206.0" text="money :" textFill="WHITE" AnchorPane.rightAnchor="490.0" />
+                                <Label fx:id="nameBankA" layoutX="212.0" layoutY="98.0" prefHeight="30.0" prefWidth="175.0" textFill="WHITE" />
+                                <Label fx:id="shabaBankA" layoutX="225.0" layoutY="140.0" prefHeight="30.0" prefWidth="175.0" textFill="WHITE" />
+                                <Label fx:id="moneyBankA" layoutX="225.0" layoutY="208.0" prefHeight="30.0" prefWidth="175.0" textFill="WHITE" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Withdrawal">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" layoutX="184.0" layoutY="78.0" prefHeight="37.0" prefWidth="232.0" text="Enter amount money" textFill="WHITE">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="moneywith" layoutX="217.0" layoutY="141.0" prefHeight="34.0" prefWidth="165.0" />
+                                <Button fx:id="confirmwith" layoutX="274.0" layoutY="275.0" mnemonicParsing="false" onAction="#confirmwithbtn" text="confirm" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="MoneyTransfer">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" layoutX="217.0" layoutY="53.0" prefHeight="37.0" prefWidth="165.0" text="Enter Shaba Number" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" layoutX="207.0" layoutY="185.0" prefHeight="31.0" prefWidth="186.0" text="Enter amount money" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="Shabanaumberfild" layoutX="211.0" layoutY="114.0" prefHeight="25.0" prefWidth="178.0" />
+                                <TextField layoutX="225.0" layoutY="236.0" />
+                                <Button fx:id="moneyFild" layoutX="483.0" layoutY="305.0" mnemonicParsing="false" onAction="#Confirmbtn" text="confirm" />
+                                <Label fx:id="MassageTransfer" layoutX="226.0" layoutY="20.0" prefHeight="25.0" prefWidth="147.0" textFill="RED" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
